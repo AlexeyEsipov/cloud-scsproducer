@@ -24,8 +24,8 @@ public class MessageController {
         String message1 = "message from controller1";
         streamBridge.send("output1", message1);
 
-        log.info("send to scs1-source : {}", message0);
-        log.info("send to scs2-source : {}", message1);
+        log.info("send to pipeline1 : {}", message0);
+        log.info("send to pipeline2 : {}", message1);
 
         return "Message send: " + message1;
     }
